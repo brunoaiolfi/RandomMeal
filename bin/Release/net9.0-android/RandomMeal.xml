@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RandomMeal</name>
+    </assembly>
+    <members>
+        <member name="T:RandomMeal.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:Refit.Implementation.Generated">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.IFreeMealApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.IFreeMealApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IFreeMealApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IFreeMealApi.GetRandomMeal">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.IFreeMealApi.IFreeMealApi#GetRandomMeal">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

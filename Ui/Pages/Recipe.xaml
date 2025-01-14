@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RandomMeal.Ui.Pages.Recipe"
+            >
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            
+            <Image 
+                Grid.Row="0"
+                HorizontalOptions="Fill"
+                x:Name="RecipeImage"
+                />
+            
+            <VerticalStackLayout Grid.Row="1" Padding="20" Spacing="16" HorizontalOptions="Fill">
+                <Label 
+                    x:Name="MealTitle"
+                    Text="Recipe"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                 />
+
+                <Label
+                     Text="Ingredients:"
+                     FontSize="16"
+                     FontAttributes="Bold"
+                 />
+                <ListView x:Name="IngredientsListView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <HorizontalStackLayout Spacing="8" HorizontalOptions="Fill">
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Measure}"/>
+                                </HorizontalStackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Label
+                    Text="Instructions:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                />
+
+                <Label
+                    x:Name="Instructions"
+                    HorizontalTextAlignment="Justify"
+                    VerticalTextAlignment="Justify"
+                />
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

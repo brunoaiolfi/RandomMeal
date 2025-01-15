@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RandomMeal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+106f62dcf9cc4ac14ec95e38c412e8294e9e3347")]
 [assembly: System.Reflection.AssemblyProductAttribute("RandomMeal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RandomMeal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

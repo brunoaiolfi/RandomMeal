@@ -1,0 +1,3 @@
+C:\Users\bruno.aiolfi\source\repos\Random Meal\RandomMeal\com.companyname.randommeal-Signed.apk
+C:\Users\bruno.aiolfi\source\repos\Random Meal\RandomMeal\com.companyname.randommeal.apk
+C:\Users\bruno.aiolfi\source\repos\Random Meal\RandomMeal\_Microsoft.Android.Resource.Designer.dll

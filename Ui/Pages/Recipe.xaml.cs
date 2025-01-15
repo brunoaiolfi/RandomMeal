@@ -1,4 +1,4 @@
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 
 namespace RandomMeal.Ui.Pages;
 
@@ -11,6 +11,7 @@ public partial class Recipe : ContentPage
 		InitializeComponent();
 
 		MealTitle.Text = recipe.StrMeal;
+        MealClassification.Text = $"🗺️ {recipe.StrArea}";
         Instructions.Text = recipe.StrInstructions;
 		RecipeImage.Source = recipe.StrMealThumb;
         IngredientsListView.ItemsSource = _ingredients;

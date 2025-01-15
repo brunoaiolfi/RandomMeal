@@ -9,21 +9,30 @@
                 <RowDefinition Height="200" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            
+
             <Image 
                 Grid.Row="0"
                 HorizontalOptions="Fill"
                 x:Name="RecipeImage"
                 />
-            
+
             <VerticalStackLayout Grid.Row="1" Padding="20" Spacing="16" HorizontalOptions="Fill">
-                <Label 
-                    x:Name="MealTitle"
-                    Text="Recipe"
-                    FontSize="24"
-                    FontAttributes="Bold"
-                    HorizontalTextAlignment="Center"
-                 />
+                <VerticalStackLayout>
+
+                    <Label 
+                        x:Name="MealTitle"
+                        Text="Recipe"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                     />
+                    <Label 
+                        x:Name="MealClassification"
+                        Text="Tags"
+                        FontSize="12"
+                        HorizontalTextAlignment="Center"
+                     />
+                </VerticalStackLayout>
 
                 <Label
                      Text="Ingredients:"
@@ -35,6 +44,7 @@
                         <DataTemplate>
                             <ViewCell>
                                 <HorizontalStackLayout Spacing="8" HorizontalOptions="Fill">
+                                    <Label Text="•"/>
                                     <Label Text="{Binding Name}"/>
                                     <Label Text="{Binding Measure}"/>
                                 </HorizontalStackLayout>

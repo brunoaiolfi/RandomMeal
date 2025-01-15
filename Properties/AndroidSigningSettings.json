@@ -1,0 +1,6 @@
+{
+  "KeyAlias": "my-key-alias",
+  "KeyPassword": "vbyd411910",
+  "StoreFile": "Resources/chaves/my-release-key.keystore",
+  "StorePassword": "vbyd411910"
+}

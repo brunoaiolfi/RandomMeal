@@ -49,8 +49,7 @@ public partial class History : ContentPage
 
                 if (response != null)
                 {
-                    var meal = response;
-                    await Navigation.PushAsync(new Recipe(meal));
+                  await Navigation.PushAsync(new Recipe(response));
                 }
             }
         } catch

@@ -7,7 +7,8 @@ namespace RandomMeal.application.aplications
         private RepRecipe repository;
         private IFreeMealApi _api;
 
-        public AplicRecipe(AppDbContext dbContext, IFreeMealApi api) {
+        public AplicRecipe(AppDbContext dbContext, IFreeMealApi api)
+        {
             repository = new RepRecipe(dbContext);
             _api = api;
         }
@@ -16,14 +17,17 @@ namespace RandomMeal.application.aplications
         {
             var meal = await _api.GetRandomMeal();
 
-            await repository.Create(
-                new RecipeModel()
-                {
-                    Name = meal.Meals[0].StrMeal,
-                    Id = meal.Meals[0].IdMeal,
-                    CreatedAt = new DateTime()
-                }
-            );
+            if (meal.Meals[0].IdMeal != null)
+            {
+                await repository.Create(
+                    new RecipeModel()
+                    {
+                        Name = meal.Meals[0].StrMeal,
+                        Id = meal.Meals[0].IdMeal,
+                        CreatedAt = new DateTime()
+                    }
+                );
+            }
 
             return meal;
         }
